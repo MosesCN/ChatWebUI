@@ -34,6 +34,7 @@ import { prettyObject } from "../utils/format";
 import { EXPORT_MESSAGE_CLASS_NAME, ModelProvider } from "../constant";
 import { getClientConfig } from "../config/client";
 import { ClientApi } from "../client/api";
+import { APP_INFO } from "../constant";
 
 const Markdown = dynamic(async () => (await import("./markdown")).Markdown, {
   loading: () => <LoadingIcon />,
@@ -538,7 +539,7 @@ export function ImagePreviewer(props: {
           </div>
 
           <div>
-            <div className={styles["main-title"]}>NextChat</div>
+            <div className={styles["main-title"]}>{APP_INFO.name}</div>
             <div className={styles["icons"]}>
               <ExportAvatar avatar={config.avatar} />
               <span className={styles["icon-space"]}>&</span>
