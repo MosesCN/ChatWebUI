@@ -589,7 +589,7 @@ export function ImagePreviewer(props: {
             </div>
           );
         })}
-        <div className="share-code">
+        <div className={styles["share-code"]}>
           <img src={AppShareIcon.src} />
         </div>
       </div>
