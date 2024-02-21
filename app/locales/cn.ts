@@ -465,6 +465,7 @@ const cn = {
     Messages: "消息",
     Topic: "主题",
     Time: "时间",
+    from: "来自",
   },
 };
 

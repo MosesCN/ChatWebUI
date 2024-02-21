@@ -467,6 +467,7 @@ const en: LocaleType = {
     Messages: "Messages",
     Topic: "Topic",
     Time: "Time",
+    from: "from",
   },
 
   URLCommand: {

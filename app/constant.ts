@@ -63,6 +63,7 @@ export const STORAGE_KEY = "chatgpt-next-web";
 export const APP_INFO = {
   name: "MChatGPT",
   slogan: "Your own AI assistant",
+  link: "https://chat.atmoses.uk",
 };
 
 export const REQUEST_TIMEOUT_MS = 60000;

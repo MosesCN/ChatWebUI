@@ -19,7 +19,7 @@ import LoadingIcon from "../icons/three-dots.svg";
 import ChatGptIcon from "../icons/chatgpt.png";
 import ShareIcon from "../icons/share.svg";
 import BotIcon from "../icons/bot.png";
-
+import AppShareIcon from "../icons/app_share.png";
 import DownloadIcon from "../icons/download.svg";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { MessageSelector, useMessageSelector } from "./message-selector";
@@ -548,6 +548,9 @@ export function ImagePreviewer(props: {
           </div>
           <div>
             <div className={styles["chat-info-item"]}>
+              {Locale.Exporter.from}: {APP_INFO.link}
+            </div>
+            <div className={styles["chat-info-item"]}>
               {Locale.Exporter.Model}: {mask.modelConfig.model}
             </div>
             <div className={styles["chat-info-item"]}>
@@ -586,6 +589,9 @@ export function ImagePreviewer(props: {
             </div>
           );
         })}
+        <div className="share-code">
+          <img src={AppShareIcon.src} />
+        </div>
       </div>
     </div>
   );
